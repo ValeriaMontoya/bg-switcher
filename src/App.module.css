@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  transition: background-color 0.4s ease;
+  font-family: Arial, sans-serif;
+  color: #191826;
+  text-align: center;
+}
+
+button {
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 2px solid transparent;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.btnPrimary {
+  background-color: #191826;
+  color: #fcfaf9;
+  border-color: #191826;
+}
+
+.btnPrimary:hover {
+  background-color: transparent;
+  color: #191826;
+  border-color: #191826;
+  transform: translateY(-1px);
+}
+
+.btnPrimary:focus-visible {
+  outline: 3px solid #191826;
+  outline-offset: 2px;
+}
