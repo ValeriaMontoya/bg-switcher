@@ -6,44 +6,57 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+}
+
 .app {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 2rem;
-  transition: background-color 0.4s ease;
-  font-family: Arial, sans-serif;
-  color: #191826;
+  gap: 1.5rem;
+  transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+  color: rgba(0, 0, 0, 0.87);
   text-align: center;
+  padding: 2rem 2rem 6rem 2rem;
 }
 
 button {
   cursor: pointer;
-  padding: 8px 16px;
+  padding: 10px 20px;
   border-radius: 8px;
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 500;
-  border: 2px solid transparent;
-  transition: all 0.2s ease;
+  border: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
+  font-family: inherit;
 }
 
 .btnPrimary {
-  background-color: #191826;
-  color: #fcfaf9;
-  border-color: #191826;
+  background-color: rgba(0, 0, 0, 0.08);
+  color: rgba(0, 0, 0, 0.87);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
 }
 
 .btnPrimary:hover {
-  background-color: transparent;
-  color: #191826;
-  border-color: #191826;
+  background-color: rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transform: translateY(-1px);
 }
 
+.btnPrimary:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
 .btnPrimary:focus-visible {
-  outline: 3px solid #191826;
+  outline: 2px solid rgba(0, 0, 0, 0.2);
   outline-offset: 2px;
 }

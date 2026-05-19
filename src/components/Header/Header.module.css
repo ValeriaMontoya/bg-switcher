@@ -1,0 +1,15 @@
+.h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  color: rgba(0, 0, 0, 0.87);
+  letter-spacing: -0.5px;
+}
+
+.p {
+  font-size: 0.95rem;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+}
